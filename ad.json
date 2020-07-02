@@ -1,0 +1,93 @@
+{
+    "dependent_sites":["blog.tig.pw","with.in.th","adjs.tig.pw"],
+    "header":[
+        {
+            "network":"",
+            "company":"",
+            "campaign":"",
+            "href":"",
+            "img":"",
+            "expire":false
+        }
+    ],
+    "sidebar_bottom_ad":[
+                {
+                    "network":"CJ",
+                    "company":"TrueMask",
+                    "campaign":"Protection for your family",
+                    "href":"https://www.anrdoezrs.net/click-100168746-14079760",
+                    "img":"https://www.awltovhc.com/image-100168746-14079760",
+                    "expire":false
+                },
+                {
+                    "network":"Amazon Affiliates",
+                    "company":"Amazon",
+                    "campaign":"Homepage - Sidebar",
+                    "href":"https://www.amazon.com/?tag=kaovilai-20&linkCode=ez",
+                    "img":"https://images-na.ssl-images-amazon.com//images/G/01/rcm/300x250.gif",
+                    "expire":false
+                },
+                {
+                    "network":"Personal Referrals",
+                    "company":"American Express",
+                    "campaign":"Platinum",
+                    "href":"https://www.americanexpress.com/en-us/credit-cards/referral/prospect/card-details/personal/platinum-charge-card/76C344C426A0CDB4A1D14B333887BAC46E763C688F242E0E3AD8900CBF5BDBCD42F5FB1476008E14A8A4BD8654DD810653F4B6992AA1DCC15B4592D157EFA5E55A55C48B3275B29F799BCBB3C06BCE5308C54D6AD6BC791C868494C35EA1BF0B77FFDB39CDC34DFD1241BFEAE4137457C5D62005F02EFFFD7BBDDF2CB96CA887?CPID=201279&amp;extlink=US-MGM-ACCOUNTHUB-copypaste-784-201279-GC4K:0033-784-GC4K:0018&amp;GENCODE=349992623528854&amp;CORID=P:A:S:S:A:K:O:o:2:c-1593526400607-1080553458",
+                    "img":"https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/category/cardarts/platinum-card.png",
+                    "expire":false
+                },
+                {
+                    "network":"Personal Referrals",
+                    "company":"American Express",
+                    "campaign":"Gold",
+                    "href":"http://refer.amex.us/PASSAKOo2c?xl=cp33",
+                    "img":"https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/category/cardarts/rose-gold-card.png",
+                    "expire":false
+                },
+                {
+                    "network":"Lazada Affiliate",
+                    "company":"Lazada",
+                    "campaign":"Marathon",
+                    "href":"https://c.lazada.co.th/t/c.ZJNudU",
+                    "img":"https://sg-test-11.slatic.net/other/lzd-ad/bc5a8a90ab69701cece1b8ba4aafce42.jpeg",
+                    "expire":false
+                },
+                {
+                    "network":"CJ",
+                    "company":"Domain.com",
+                    "campaign":"Take the first step",
+                    "href":"https://www.anrdoezrs.net/click-100168746-13631773",
+                    "img":"https://www.lduhtrp.net/image-100168746-13631773",
+                    "expire":false
+                },
+                {
+                    "network":"accesstrade",
+                    "company":"ralunar",
+                    "campaign":"ralunar",
+                    "href":"https://click.accesstrade.in.th/adv.php?rk=001vj1000oyb",
+                    "img":"https://imp.accesstrade.in.th/img.php?rk=001vj1000oyb",
+                    "expire":false
+                },
+                {
+                    "network":"",
+                    "company":"",
+                    "campaign":"",
+                    "href":"",
+                    "img":"",
+                    "expire":true
+                }
+            ],
+            "midpage":[
+                
+    ],
+    "footer":[
+        {
+            "network":"Amazon Affiliates",
+            "company":"Amazon",
+            "campaign":"Homepage - Footer",
+            "href":"https://www.amazon.com/?tag=kaovilai-20&linkCode=ez",
+            "img":"https://images-na.ssl-images-amazon.com//images/G/01/rcm/728x90.gif",
+            "expire":false
+        }
+        
+    ]
+}

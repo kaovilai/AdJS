@@ -1,0 +1,51 @@
+{
+    "dependent_sites":["ใน.ไทย"],
+    "header":[
+        {
+            "network":"",
+            "company":"",
+            "campaign":"",
+            "href":"",
+            "img":"",
+            "expire":false
+        }
+    ],
+    "sidebar_bottom_ad":[
+                {
+                    "network":"Lazada Affiliate",
+                    "company":"Lazada",
+                    "campaign":"Marathon",
+                    "href":"https://c.lazada.co.th/t/c.ZJNudU",
+                    "img":"https://sg-test-11.slatic.net/other/lzd-ad/bc5a8a90ab69701cece1b8ba4aafce42.jpeg",
+                    "expire":false
+                },
+                {
+                    "network":"CJ",
+                    "company":"Domain.com",
+                    "campaign":"Take the first step",
+                    "href":"https://www.anrdoezrs.net/click-100168746-13631773",
+                    "img":"https://www.lduhtrp.net/image-100168746-13631773",
+                    "expire":false
+                },
+                {
+                    "network":"accesstrade",
+                    "company":"ralunar",
+                    "campaign":"ralunar",
+                    "href":"https://click.accesstrade.in.th/adv.php?rk=001vj1000oyb",
+                    "img":"https://imp.accesstrade.in.th/img.php?rk=001vj1000oyb",
+                    "expire":false
+                },
+                {
+                    "network":"",
+                    "company":"",
+                    "campaign":"",
+                    "href":"",
+                    "img":"",
+                    "expire":true
+                }
+            ],
+    "midpage":[
+                
+    ],
+    "footer":[]
+}
