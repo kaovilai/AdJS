@@ -63,7 +63,7 @@ function populateJSON(elementid, adkey, adjson){
     for(i in adsets){
         if(adsets[i].expire) continue; //don't show expired ad
         adblock += '<a '
-            + 'href="' + adsets[i]['href'] + '" target=_blank onclick="ga(\'send\',\'event\',\'ads\',\'click\',\''
+            + 'href="' + adsets[i]['href'] + '" target=_blank onclick="ga(\'blogger.send\',\'event\',\'ads\',\'click\',\''
             + adsets[i]['network'] + ' - '
             + adsets[i]['company'] + ' - '
             + adsets[i]['campaign'] + '\');">'
