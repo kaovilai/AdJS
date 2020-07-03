@@ -6,6 +6,11 @@ const adjsonurl="https://adjs.tig.pw/ad.json";
  * @param {URL} jsonurl json location of ad data
  */
 function populateKey(elementid, adkey, jsonurl){
+    //if elementid does not exist on page, quit immediately.
+    if(document.getElementById(elementid) == null) {
+        console.log(elementid + ' is not a valid elementid on this page');
+        return;
+    }
     adkey = (typeof adkey != "undefined") ? adkey : elementid; //allow adkey to default to element id
     jsonurl = (typeof jsonurl != "undefined") ? jsonurl : adjsonurl; //allow jsonurl to default to adjsonurl const
     var adjson = get(jsonurl,'json',populateJSON,elementid,adkey);
