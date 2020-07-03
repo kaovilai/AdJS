@@ -3,10 +3,34 @@ const adjsonurl="https://adjs.tig.pw/ad.json";
  * Populate ad
  * @param {string} elementid id of element to populate
  * @param {string} adkey key to retrieve data from json
+ * @param {URL} jsonurl json location of ad data
  */
-function populateKey(elementid, adkey){
+function populateKey(elementid, adkey, jsonurl){
     adkey = (typeof adkey != "undefined") ? adkey : elementid; //allow adkey to default to element id
-    var adjson = get(adjsonurl,'json',populateJSON,elementid,adkey);
+    jsonurl = (typeof jsonurl != "undefined") ? jsonurl : adjsonurl; //allow jsonurl to default to adjsonurl const
+    var adjson = get(jsonurl,'json',populateJSON,elementid,adkey);
+}
+/**
+ * Use to populate array of element ids
+ * @param {Array} elementIdArray array of element ids
+ */
+function populateKeys(elementIdArray){
+    for(i in elementIdArray) populateKey(elementIdArray[i]);
+}
+/**
+ * Use to populate array of element ids with json data at url
+ * @param {URL} jsonurl json location of ad data
+ * @param {Array} elementIdArray array of element ids
+ */
+function populateKeysURL(jsonurl, elementIdArray){
+    for(i in elementIdArray) populateKey(elementIdArray[i], null, jsonurl);
+}
+/**
+ * Use to populate array of element ids
+ * @param {Array} elementIdArray array of element ids
+ */
+function populateKeys(elementIdArray){
+    for(i in elementIdArray) populateKey(elementIdArray[i]);
 }
 /**
  * * Populate ad
