@@ -49,3 +49,8 @@ Issues and PRs welcome.
 }
 ```
 
+## Blogger Setup
+
+Go to your site's layouts page and embed the script through adding _HTML/Script gadget_ to sidebars or other areas.
+
+You can then choose what elementId aka `id="*"` get to have an ad, and it can be anything you can see with your browser's DevTools. In [my blog](https://blog.tig.pw), I was able to simply replace to footer area. With some further enhancements, _AdJS_ should be able to add onto the page instead of replacing `.innerhtml`. Now editing blogger themes will be in your past. Switching themes is easy without risk losing your setup.
