@@ -1,4 +1,5 @@
 {
+    "dependent_sites":["blog.tig.pw","with.in.th"],
     "header":[
         {
             "network":"",
