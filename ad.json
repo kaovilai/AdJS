@@ -21,7 +21,7 @@
                 {
                     "network":"Amazon Affiliates",
                     "company":"Amazon",
-                    "campaign":"Homepage",
+                    "campaign":"Homepage - Sidebar",
                     "href":"https://www.amazon.com/?tag=kaovilai-20&linkCode=ez",
                     "img":"https://images-na.ssl-images-amazon.com//images/G/01/rcm/300x250.gif",
                     "expire":false
@@ -74,11 +74,19 @@
                     "img":"",
                     "expire":true
                 }
-    ],
-    "midpage":[
-
+            ],
+            "midpage":[
+                
     ],
     "footer":[
-
+        {
+            "network":"Amazon Affiliates",
+            "company":"Amazon",
+            "campaign":"Homepage - Footer",
+            "href":"https://www.amazon.com/?tag=kaovilai-20&linkCode=ez",
+            "img":"https://images-na.ssl-images-amazon.com//images/G/01/rcm/728x90.gif",
+            "expire":false
+        }
+        
     ]
 }

@@ -5,15 +5,15 @@ const adjsonurl="https://adjs.tig.pw/ad.json";
  * @param {string} adkey key to retrieve data from json
  */
 function populateKey(elementid, adkey){
+    adkey = (typeof adkey != "undefined") ? adkey : elementid; //allow adkey to default to element id
     var adjson = get(adjsonurl,'json',populateJSON,elementid,adkey);
 }
 /**
  * * Populate ad
- * @param {*} elementid element to populated
- * @param {*} adjson json to populate element
+ * @param {string} elementid element to populated
+ * @param {JSON} adjson json to populate element
  */
 function populateJSON(elementid, adkey, adjson){
-    console.log(JSON.stringify(adjson));
     var adsets = getVal(adkey,adjson);
     // var adsets = getVal(adkey,JSON.parse(adjson));
     var adblock = "";
@@ -27,7 +27,7 @@ function populateJSON(elementid, adkey, adjson){
             + '<img class="adjs" src="' + adsets[i]['img'] + '"/></a><br>';
     }
     document.getElementById(elementid)
-        .innerHTML = '<style> img.adjs {max-width: 100%; width: 100%; height: auto;} </style>'+ adblock;
+        .innerHTML = '<a href="https://github.com/kaovilai/adjs" target="_blank"><p style="text-align: right; margin: 0; font-size: small"><i>populated with AdJS</i></p></a>' + '<style> img.adjs {max-width: 100%; width: 100%; height: auto;} </style>'+ adblock;
 }
 /**
  * calls populate to populate sidebar-ad
