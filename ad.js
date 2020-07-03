@@ -1,3 +1,9 @@
+/**
+ * Author: Passawit Kaovilai (Tiger)
+ * Repository: github.com/kaovilai/adjs
+ * License: see github.com/kaovilai/adjs/LICENSE.md
+ */
+
 const adjsonurl="https://adjs.tig.pw/ad.json";
 /**
  * Populate ad
