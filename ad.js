@@ -95,6 +95,7 @@ function getAdElementSets(adsets){
         adelement.href = adsets[i]['href'];
         adelement.target = "_blank";
         adelement.className = adsets[i]['network']+'-'+ adsets[i]['company']+'-'+ adsets[i]['campaign'];
+        adelement.rel='sponsored';
         var img = document.createElement('img');
         img.src = adsets[i]['img'];
         img.className = "adjs";
