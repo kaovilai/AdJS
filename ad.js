@@ -63,10 +63,10 @@ function populateJSON(elementid, adkey, adjson){
     for(i in adsets){
         if(adsets[i].expire) continue; //don't show expired ad
         adblock += '<a '
-            + 'href="' + adsets[i]['href'] + '" target=_blank onclick="ga(\'blogger.send\',\'event\',\'ads\',\'click\',\''
-            + adsets[i]['network'] + ' - '
-            + adsets[i]['company'] + ' - '
-            + adsets[i]['campaign'] + '\');">'
+        + 'href="' + adsets[i]['href'] + '" target=_blank '
+            + 'classname="' +adsets[i]['network'] + '-'
+            + adsets[i]['company'] + '-'
+            + adsets[i]['campaign'] + '">'
             + '<img class="adjs" src="' + adsets[i]['img'] + '"/></a><br>';
     }
     document.getElementById(elementid)
