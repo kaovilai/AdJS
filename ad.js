@@ -59,8 +59,23 @@ function populateJSON(elementid, adkey, adjson){
         console.warn(elementid + ' is not a valid elementid on this page');
         return;
     }
-    var adelementsets = "";
     var adsets = getVal(adkey,adjson);
+    var adelementsets = getAdElementSets(adsets);
+    var style = document.createElement('style');
+    style.innerHTML = 'img.adjs {max-width: 100%; width: 100%; height: auto; box-shadow: 2px 2px 10px orange;}';
+    element.innerHTML=promoElement;
+    //element insert loop
+    var inserting = [style.outerHTML,adelementsets];
+    for(i in inserting)
+    element.insertAdjacentHTML('beforeend',inserting[i]);
+    loaded();
+}
+/**
+ * Generate AdElementSets
+ * @param {JSON} adsets Sets of ads JSON
+ */
+function getAdElementSets(adsets){
+    var adelementsets = "";
     for(i in adsets){
         if(adsets[i].expire) continue; //don't show expired ad
         var adelement = document.createElement("a");
@@ -72,15 +87,8 @@ function populateJSON(elementid, adkey, adjson){
         img.className = "adjs";
         adelement.insertAdjacentElement('afterbegin',img);
         adelementsets+=adelement.outerHTML + "<br>";
-    }   
-    var style = document.createElement('style');
-    style.innerHTML = 'img.adjs {max-width: 100%; width: 100%; height: auto; box-shadow: 2px 2px 10px orange;}';
-    element.innerHTML=promoElement;
-    //element insert loop
-    var inserting = [style.outerHTML,adelementsets];
-    for(i in inserting)
-    element.insertAdjacentHTML('beforeend',inserting[i]);
-    loaded();
+    }
+    return adelementsets;
 }
 /**
  * calls populate to populate sidebar-ad
