@@ -68,12 +68,13 @@ function populateJSON(elementid, adkey, adjson){
             + adsets[i]['company'] + '-'
             + adsets[i]['campaign'] + '">'
             + '<img class="adjs" src="' + adsets[i]['img'] + '"/></a><br>';
-    }
-    document.getElementById(elementid)
+        }
+        document.getElementById(elementid)
         .innerHTML = '<a href="https://github.com/kaovilai/adjs" target="_blank"><p style="text-align: right; margin: 0; font-size: small"><i>populated by AdJS</i></p></a>'
         + '<style> img.adjs {max-width: 100%; width: 100%; height: auto; box-shadow: 2px 2px 10px orange;} </style>'
         + adblock;
-}
+        loaded();
+    }
 /**
  * calls populate to populate sidebar-ad
  */
@@ -91,8 +92,8 @@ function get(url,type,returningfunction,param1,param2){
     httpreq.responseType = type;
     httpreq.open("GET",url,true);
     // httpreq.onprogress = function () {
-    //     console.log('LOADING', httpreq.readyState); // readyState will be 3
-    // };
+        //     console.log('LOADING', httpreq.readyState); // readyState will be 3
+        // };
     httpreq.onload = function() {
         response = httpreq.response;
         returningfunction(param1,param2,response);
@@ -109,4 +110,10 @@ function getVal(key, obj){
         if(!obj.hasOwnProperty(i)) continue;
         if(i == key) return obj[i];
     }
+}
+/**
+ * Tell other scripts we are done here
+ */
+function loaded(){
+    if(typeof adjsloaded == "function") adjsloaded();
 }
