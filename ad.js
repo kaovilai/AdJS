@@ -5,7 +5,8 @@
  */
 
 /** default ad url */
-const adjsonurl="https://adjs.tig.pw/ad.json";
+const adjsonurl ="https://adjs.tig.pw/ad.json";
+const promoElement = '<a href="https://github.com/kaovilai/adjs" target="_blank"><p style="text-align: right; margin: 0; font-size: small"><i>populated by AdJS</i></p></a>';
 /**
  * Populate ad
  * NOTE: Take care to use undefined without quotes in `onload` instead of null
@@ -20,11 +21,6 @@ const adjsonurl="https://adjs.tig.pw/ad.json";
  * @param {URL} jsonurl json location of ad data
  */
 function populateKey(elementid, adkey, jsonurl){
-    //if elementid does not exist on page, quit immediately.
-    if(document.getElementById(elementid) == null) {
-        console.warn(elementid + ' is not a valid elementid on this page');
-        return;
-    }
     adkey = (typeof adkey != "undefined") ? adkey : elementid; //allow adkey to default to element id
     jsonurl = (typeof jsonurl != "undefined") ? jsonurl : adjsonurl; //allow jsonurl to default to adjsonurl const
     var adjson = get(jsonurl,'json',populateJSON,elementid,adkey);
@@ -57,24 +53,35 @@ function populateKeys(elementIdArray){
  * @param {JSON} adjson json to populate element
  */
 function populateJSON(elementid, adkey, adjson){
+    var element = document.getElementById(elementid);
+    //if elementid does not exist on page, quit immediately.
+    if(element == null) {
+        console.warn(elementid + ' is not a valid elementid on this page');
+        return;
+    }
+    var adelementsets = "";
     var adsets = getVal(adkey,adjson);
-    // var adsets = getVal(adkey,JSON.parse(adjson));
-    var adblock = "";
     for(i in adsets){
         if(adsets[i].expire) continue; //don't show expired ad
-        adblock += '<a '
-        + 'href="' + adsets[i]['href'] + '" target=_blank '
-            + 'classname="' +adsets[i]['network'] + '-'
-            + adsets[i]['company'] + '-'
-            + adsets[i]['campaign'] + '">'
-            + '<img class="adjs" src="' + adsets[i]['img'] + '"/></a><br>';
-        }
-        document.getElementById(elementid)
-        .innerHTML = '<a href="https://github.com/kaovilai/adjs" target="_blank"><p style="text-align: right; margin: 0; font-size: small"><i>populated by AdJS</i></p></a>'
-        + '<style> img.adjs {max-width: 100%; width: 100%; height: auto; box-shadow: 2px 2px 10px orange;} </style>'
-        + adblock;
-        loaded();
-    }
+        var adelement = document.createElement("a");
+        adelement.href = adsets[i]['href'];
+        adelement.target = "_blank";
+        adelement.className = adsets[i]['network']+'-'+ adsets[i]['company']+'-'+ adsets[i]['campaign'];
+        var img = document.createElement('img');
+        img.src = adsets[i]['img'];
+        img.className = "adjs";
+        adelement.insertAdjacentElement('afterbegin',img);
+        adelementsets+=adelement.outerHTML + "<br>";
+    }   
+    var style = document.createElement('style');
+    style.innerHTML = 'img.adjs {max-width: 100%; width: 100%; height: auto; box-shadow: 2px 2px 10px orange;}';
+    element.innerHTML=promoElement;
+    //element insert loop
+    var inserting = [style.outerHTML,adelementsets];
+    for(i in inserting)
+    element.insertAdjacentHTML('beforeend',inserting[i]);
+    loaded();
+}
 /**
  * calls populate to populate sidebar-ad
  */
