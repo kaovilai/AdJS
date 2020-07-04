@@ -65,12 +65,20 @@
     ],
     "footer":[
         {
+            "network":"CJ",
+            "company":"OnePlus",
+            "campaign":"OnePlus 8 Series",
+            "href":"https://www.tkqlhce.com/click-100168746-14030694",
+            "img":"https://www.lduhtrp.net/image-100168746-14030694",
+            "expire":false
+        },
+        {
             "network":"Amazon Affiliates",
             "company":"Amazon",
             "campaign":"Homepage - Footer",
             "href":"https://www.amazon.com/?tag=kaovilai-20&linkCode=ez",
             "img":"https://images-na.ssl-images-amazon.com//images/G/01/rcm/728x90.gif",
-            "expire":false
+            "expire":true
         }
         
     ]
