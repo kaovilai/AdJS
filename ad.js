@@ -62,7 +62,19 @@ function populateJSON(elementid, adkey, adjson){
     var adsets = getVal(adkey,adjson);
     var adelementsets = getAdElementSets(adsets);
     var style = document.createElement('style');
-    style.innerHTML = 'img.adjs {max-width: 100%; width: 100%; height: auto; box-shadow: 2px 2px 10px orange;}';
+    style.innerHTML = '\
+        img.adjs { \
+            max-width: 100%; \
+            width: 100%; \
+            height: auto; \
+            box-shadow: 2px 2px 10px orange;\
+            transition: .15s;\
+            transition-timing-function: ease-out;\
+        }\
+        img.adjs:hover {\
+            box-shadow: 0px 0px 40px green;\
+        }\
+        ';
     element.innerHTML=promoElement;
     //element insert loop
     var inserting = [style.outerHTML,adelementsets];
