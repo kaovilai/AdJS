@@ -73,6 +73,7 @@ function populateJSON(elementid, adkey, adjson){
         }\
         img.adjs:hover {\
             box-shadow: 0px 0px 40px green;\
+            scale: 1.05;\
         }\
         ';
     element.innerHTML=promoElement;
