@@ -22,6 +22,22 @@
         },
         {
             "network":"Personal_Referrals",
+            "company":"Citi",
+            "campaign":"Citi_Rewards_Plus",
+            "href":"",
+            "img":"https://github.tig.pw/blog.tig.pw/img/card/Citi-Rewards-360x225.png",
+            "expire":false
+        },
+        {
+            "network":"Personal_Referrals",
+            "company":"Amazon",
+            "campaign":"Amazon_Prime_Visa",
+            "href":"https://amzn.to/3iEyHZR",
+            "img":"https://github.tig.pw/blog.tig.pw/img/card/AmzPVisa.png",
+            "expire":false
+        },
+        {
+            "network":"Personal_Referrals",
             "company":"Discover",
             "campaign":"Discover_It_Student",
             "href":"https://refer.discover.com/s/5sxwe",
@@ -86,7 +102,7 @@
             "company":"OnePlus",
             "campaign":"OnePlus_8_Series",
             "href":"https://www.tkqlhce.com/click-100168746-14030694",
-            "img":"https://www.lduhtrp.net/image-100168746-14030694",
+            "img":"https://www.lduhtrp.net/image-100168746-14030690",
             "expire":false
         },
         {
