@@ -60,6 +60,7 @@ function populateJSON(elementid, adkey, adjson){
         return;
     }
     var adsets = getVal(adkey,adjson);
+    if(typeof adsets == "undefined") return; //don't populate empty adsets
     var adelementsets = getAdElementSets(adsets);
     var style = document.createElement('style');
     style.innerHTML = '\
