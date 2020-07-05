@@ -26,13 +26,6 @@ function populateKey(elementid, adkey, jsonurl){
     var adjson = get(jsonurl,'json',populateJSON,elementid,adkey);
 }
 /**
- * Use to populate array of element ids
- * @param {Array} elementIdArray array of element ids
- */
-function populateKeys(elementIdArray){
-    for(i in elementIdArray) populateKey(elementIdArray[i]);
-}
-/**
  * Use to populate array of element ids with json data at url
  * @param {URL} jsonurl json location of ad data
  * @param {Array} elementIdArray array of element ids
@@ -74,7 +67,7 @@ function populateJSON(elementid, adkey, adjson){
         }\
         img.adjs:hover {\
             box-shadow: 0px 0px 40px green;\
-            scale: 1.05;\
+            -webkit-transform: scale(1.05);\
         }\
         ';
     element.innerHTML=promoElement;
