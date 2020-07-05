@@ -10,7 +10,16 @@
             "expire":true
         }
     ],
-    "topbar_ad":[],
+    "topbar_ad":[
+        {
+            "network":"CJ",
+            "company":"OnePlus",
+            "campaign":"OnePlus_8_Pro",
+            "href":"https://www.kqzyfj.com/click-100168746-14030748",
+            "img":"https://www.ftjcfx.com/image-100168746-14030748",
+            "expire":false
+        }
+    ],
     "sidebar_top_ad":[
         {
             "network":"Personal_Referrals",
@@ -100,9 +109,9 @@
         {
             "network":"CJ",
             "company":"OnePlus",
-            "campaign":"OnePlus_8_Series",
+            "campaign":"OnePlus_8_Pro",
             "href":"https://www.tkqlhce.com/click-100168746-14030694",
-            "img":"https://www.lduhtrp.net/image-100168746-14030690",
+            "img":"https://www.awltovhc.com/image-100168746-14030740",
             "expire":false
         },
         {
