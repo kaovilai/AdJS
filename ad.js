@@ -61,12 +61,12 @@ function populateJSON(elementid, adkey, adjson){
             max-width: 100%; \
             width: 100%; \
             height: auto; \
-            box-shadow: 2px 2px 10px orange;\
+            -webkit-filter: drop-shadow(2px 2px 10px orange);\
             transition: .15s;\
             transition-timing-function: ease-out;\
         }\
         img.adjs:hover {\
-            box-shadow: 0px 0px 40px green;\
+            -webkit-filter: drop-shadow(0px 0px 40px green);\
             -webkit-transform: scale(1.05);\
         }\
         ';
