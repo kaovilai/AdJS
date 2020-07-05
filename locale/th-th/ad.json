@@ -10,6 +10,8 @@
             "expire":false
         }
     ],
+    "topbar_ad":[],
+    "sidebar_top_ad":[],
     "sidebar_bottom_ad":[
                 {
                     "network":"Lazada Affiliate",
@@ -44,8 +46,6 @@
                     "expire":true
                 }
             ],
-    "midpage":[
-                
-    ],
-    "footer":[]
+    "midpage_ad":[],
+    "footer_ad":[]
 }
