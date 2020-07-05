@@ -14,10 +14,11 @@
     "sidebar_top_ad":[
         {
             "network":"Personal_Referrals",
-            "company":"American_Express",
-            "campaign":"Gold",
-            "href":"http://refer.amex.us/PASSAKOo2c?xl=cp33",
-            "img":"https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/category/cardarts/rose-gold-card.png",
+            "company":"Deserve",
+            "campaign":"Deserve_EDU",
+            "href":"http://deserve.com/E9CDD",
+            "img":"https://website-static.deserve.com/wp-content/uploads/2019/11/deserve_edu_home-288x288.png",
+
             "expire":false
         },
         {
@@ -30,10 +31,10 @@
         },
         {
             "network":"Personal_Referrals",
-            "company":"Deserve",
-            "campaign":"Deserve_EDU",
-            "href":"http://deserve.com/E9CDD",
-            "img":"https://website-static.deserve.com/wp-content/uploads/2019/11/deserve_edu_home-288x288.png",
+            "company":"American_Express",
+            "campaign":"Gold",
+            "href":"http://refer.amex.us/PASSAKOo2c?xl=cp33",
+            "img":"https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/category/cardarts/rose-gold-card.png",
             "expire":false
         }
     ],
