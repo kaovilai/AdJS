@@ -56,6 +56,9 @@ function populateJSON(elementid, adkey, adjson){
     if(typeof adsets == "undefined" || adsets.length == 0) return; //don't populate empty adsets
     var adelementsets = getAdElementSets(adsets);
     var style = document.createElement('style');
+    style.id='adjs-style';
+    element.innerHTML=promoElement;
+    if(document.getElementById(adjs-style) == null){
     style.innerHTML = '\
         img.adjs { \
             max-width: 100%; \
@@ -66,16 +69,14 @@ function populateJSON(elementid, adkey, adjson){
             transition-timing-function: ease-out;\
         }\
         img.adjs:hover {\
-            -webkit-filter: drop-shadow(0px 0px 40px green);\
+            -webkit-filter: drop-shadow(0px 0px 30px white);\
             -webkit-transform: scale(1.05);\
         }\
         ';
-    element.innerHTML=promoElement;
-    //element insert loop
-    var inserting = [style.outerHTML,adelementsets];
-    for(i in inserting)
-    element.insertAdjacentHTML('beforeend',inserting[i]);
-    loaded();
+        element.insertAdjacentHTML('beforeend',style.outerHTML);
+    }
+    element.insertAdjacentHTML('beforeend',adelementsets);
+    if(typeof loaded == 'function') loaded();
 }
 /**
  * Generate AdElementSets
