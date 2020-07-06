@@ -69,8 +69,27 @@ function populateJSON(elementid, adkey, adjson){
             transition-timing-function: ease-out;\
         }\
         img.adjs:hover {\
-            -webkit-filter: drop-shadow(0px 0px 30px white);\
+            box-shadow: 0px 0px 40px green;\
             -webkit-transform: scale(1.05);\
+            animation: wiggle 1s infinite;\
+            \
+        }\
+        @keyframes wiggle{\
+            0%{\
+                    -webkit-transform:rotate(0deg);\
+                }    \
+            25%{\
+                    -webkit-transform:rotate(2deg);\
+                }    \
+            50%{\
+                    -webkit-transform:rotate(0deg);\
+                }    \
+            75%{\
+                    -webkit-transform:rotate(-2deg);\
+                }    \
+            100%{\
+                    -webkit-transform:rotate(0deg);\
+                }    \
         }\
         ';
         element.insertAdjacentHTML('beforeend',style.outerHTML);
