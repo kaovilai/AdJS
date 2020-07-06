@@ -26,7 +26,7 @@
             "company":"PNC",
             "campaign":"PNC_NC_State",
             "href":"https://www.pnc.com/en/personal-banking/banking/student-banking/nc-state.html",
-            "img":"https://github.tig.pw/blog.tig.pw/img/card/pnc.png",
+            "img":"https://github.tig.pw/blog.tig.pw/img/card/pnc.webp",
             "expire":false
         },
         {
@@ -34,7 +34,7 @@
             "company":"Charles_Schwab",
             "campaign":"Schwab_Investor_Debit",
             "href":"https://www.schwab.com/checking",
-            "img":"https://github.tig.pw/blog.tig.pw/img/card/schwab.png",
+            "img":"https://github.tig.pw/blog.tig.pw/img/card/schwab.webp",
             "expire":false
         },
         {
@@ -42,7 +42,7 @@
             "company":"Cash_App",
             "campaign":"Card",
             "href":"https://www.cash.app/app/NNGCCPX",
-            "img":"https://github.tig.pw/blog.tig.pw/img/card/cashapp.png",
+            "img":"https://github.tig.pw/blog.tig.pw/img/card/cashapp.webp",
             "expire":false
         },
         {
@@ -67,7 +67,7 @@
             "company":"Citi",
             "campaign":"Citi_Rewards_Plus",
             "href":"https://www.citi.com/credit-cards/credit-card-details/citi.action?ID=citi-rewards-plus-credit-card",
-            "img":"https://github.tig.pw/blog.tig.pw/img/card/Citi-Rewards-360x225.png",
+            "img":"https://github.tig.pw/blog.tig.pw/img/card/Citi-Rewards-360x225.webp",
             "expire":false
         },
         {
@@ -75,7 +75,7 @@
             "company":"Amazon",
             "campaign":"Amazon_Prime_Visa",
             "href":"https://amzn.to/3iEyHZR",
-            "img":"https://github.tig.pw/blog.tig.pw/img/card/AmzPVisa.png",
+            "img":"https://github.tig.pw/blog.tig.pw/img/card/AmzPVisa.webp",
             "expire":false
         },
         {
@@ -83,7 +83,7 @@
             "company":"Robinhood",
             "campaign":"Robinhood_Debit",
             "href":"https://join.robinhood.com/passawk1",
-            "img":"https://github.tig.pw/blog.tig.pw/img/card/RobinhoodCard.png",
+            "img":"https://github.tig.pw/blog.tig.pw/img/card/RobinhoodCard.webp",
             "expire":false
         },
         {
