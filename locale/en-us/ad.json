@@ -27,7 +27,15 @@
             "campaign":"Deserve_EDU",
             "href":"http://deserve.com/E9CDD",
             "img":"https://wp2prod.deserve.com/wp-content/uploads/20190821190502/Edu21122.jpg",
-
+            
+            "expire":false
+        },
+        {
+            "network":"Personal_Referrals",
+            "company":"American_Express",
+            "campaign":"Hilton_Honors",
+            "href":"http://refer.amex.us/PASSAKs6wv?xl=cp33",
+            "img":"https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/category/cardarts/hilton-honors.png",
             "expire":false
         },
         {
