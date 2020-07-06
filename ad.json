@@ -31,6 +31,14 @@
         },
         {
             "network":"Personal_Referrals",
+            "company":"American_Express",
+            "campaign":"Hilton_Honors",
+            "href":"http://refer.amex.us/PASSAKs6wv?xl=cp33",
+            "img":"https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/category/cardarts/hilton-honors.png",
+            "expire":false
+        },
+        {
+            "network":"Personal_Referrals",
             "company":"Citi",
             "campaign":"Citi_Rewards_Plus",
             "href":"https://www.citi.com/credit-cards/credit-card-details/citi.action?ID=citi-rewards-plus-credit-card",
