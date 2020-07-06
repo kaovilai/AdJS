@@ -48,6 +48,14 @@
         },
         {
             "network":"Personal_Referrals",
+            "company":"Robinhood",
+            "campaign":"Robinhood_Debit",
+            "href":"https://join.robinhood.com/passawk1",
+            "img":"https://github.tig.pw/blog.tig.pw/img/card/RobinhoodCard.png",
+            "expire":false
+        },
+        {
+            "network":"Personal_Referrals",
             "company":"Discover",
             "campaign":"Discover_It_Student",
             "href":"https://refer.discover.com/s/5sxwe",
