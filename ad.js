@@ -69,7 +69,7 @@ function populateJSON(elementid, adkey, adjson){
             transition-timing-function: ease-out;\
         }\
         img.adjs:hover {\
-            -webkit-filter: drop-shadow(box-shadow: 0px 0px 40px white);\
+            -webkit-filter: drop-shadow(0px 0px 40px white);\
             -webkit-transform: scale(1.05);\
             animation: wiggle 1s infinite;\
             \
