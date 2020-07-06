@@ -58,7 +58,7 @@ function populateJSON(elementid, adkey, adjson){
     var style = document.createElement('style');
     style.id='adjs-style';
     element.innerHTML=promoElement;
-    if(document.getElementById(adjs-style) == null){
+    if(document.getElementById(style.id) == null){
     style.innerHTML = '\
         img.adjs { \
             max-width: 100%; \
