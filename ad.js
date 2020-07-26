@@ -60,7 +60,8 @@ function populateJSON(elementid, adkey, adjson){
     element.innerHTML=promoElement;
     if(document.getElementById(style.id) == null){
     style.innerHTML =
-        'img.adjs {' +
+        'img.adjs {\
+' +
             'max-width: 100%; ' +
             'width: 100%; ' +
             'height: auto; ' +
