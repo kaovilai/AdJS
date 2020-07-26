@@ -1,4 +1,5 @@
 # AdJS - Skip fiddling with HTML code everytime you have a new sponsor 😜
+![CI](https://github.com/kaovilai/AdJS/workflows/CI/badge.svg?branch=master)
 
 AdJS is a suite of tools that make embedding a list of linked images easy.
 Makes it easy to embed thirdparty ads without editing Blogger themes HTML so you don't lose theme preview.
