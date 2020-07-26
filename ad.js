@@ -59,39 +59,37 @@ function populateJSON(elementid, adkey, adjson){
     style.id='adjs-style';
     element.innerHTML=promoElement;
     if(document.getElementById(style.id) == null){
-    style.innerHTML = '\
-        img.adjs { \
-            max-width: 100%; \
-            width: 100%; \
-            height: auto; \
-            -webkit-filter: drop-shadow(2px 2px 10px orange);\
-            transition: .15s;\
-            transition-timing-function: ease-out;\
-        }\
-        img.adjs:hover {\
-            -webkit-filter: drop-shadow(0px 0px 40px white);\
-            -webkit-transform: scale(1.05);\
-            animation: wiggle 1s infinite;\
-            \
-        }\
-        @keyframes wiggle{\
-            0%{\
-                    -webkit-transform:rotate(0deg);\
-                }    \
-            25%{\
-                    -webkit-transform:rotate(2deg);\
-                }    \
-            50%{\
-                    -webkit-transform:rotate(0deg);\
-                }    \
-            75%{\
-                    -webkit-transform:rotate(-2deg);\
-                }    \
-            100%{\
-                    -webkit-transform:rotate(0deg);\
-                }    \
-        }\
-        ';
+    style.innerHTML =
+        'img.adjs {' +
+            'max-width: 100%; ' +
+            'width: 100%; ' +
+            'height: auto; ' +
+            '-webkit-filter: drop-shadow(2px 2px 10px orange);' +
+            'transition: .15s;' +
+            'transition-timing-function: ease-out;' +
+        '}' +
+        'img.adjs:hover {' +
+            '-webkit-filter: drop-shadow(0px 0px 40px white);' +
+            '-webkit-transform: scale(1.05);' +
+            'animation: wiggle 1s infinite;' +
+        '}' +
+        '@keyframes wiggle{' +
+            '0%{' +
+                    '-webkit-transform:rotate(0deg);' +
+                '}    ' +
+            '25%{' +
+                    '-webkit-transform:rotate(2deg);' +
+                '}    ' +
+            '50%{' +
+                    '-webkit-transform:rotate(0deg);' +
+                '}    ' +
+            '75%{' +
+                    '-webkit-transform:rotate(-2deg);' +
+                '}    ' +
+            '100%{' +
+                    '-webkit-transform:rotate(0deg);' +
+                '}    ' +
+        '}'
         element.insertAdjacentHTML('beforeend',style.outerHTML);
     }
     element.insertAdjacentHTML('beforeend',adelementsets);
