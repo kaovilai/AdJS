@@ -45,7 +45,7 @@ function populateKeys(elementIdArray){
  * @param {string} elementid element to populated
  * @param {JSON} adjson json to populate element
  */
-function populateJSON(elementid, adkey, adjson){
+function populateJSONelementid, adkey, adjson){
     var element = document.getElementById(elementid);
     //if elementid does not exist on page, quit immediately.
     if(element == null) {
