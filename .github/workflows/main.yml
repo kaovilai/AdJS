@@ -12,8 +12,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
+  # Output minified js as well as check for errors
+  closure-compile:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -38,3 +38,13 @@ jobs:
       run: |
         echo +--Dry Compiling--+
         java -jar closure-compiler-v*.jar --js ad.js
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate JSON
+        uses: OrRosenblatt/validate-json-action@0.1.0
+        #with:
+          # Relative file path under the repository of a JSON schema file to validate the other JSON files with.
+          #schema: # default is ./schema.json
+          # One or more relative file paths under the repository (seperated by comma) of the JSON files to validate with the schema provided.
+          #json:
