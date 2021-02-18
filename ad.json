@@ -65,7 +65,7 @@
             "network":"Personal_Referrals",
             "company":"American_Express",
             "campaign":"Hilton_Honors",
-            "href":"http://refer.amex.us/PASSAKs6wv?xl=cp33",
+            "href":"http://refer.amex.us/PASSAKqRhb?XLINK=MYCP",
             "img":"https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/category/cardarts/hilton-honors.png",
             "expire":false
         },
@@ -105,8 +105,16 @@
             "network":"Personal_Referrals",
             "company":"American_Express",
             "campaign":"Gold",
-            "href":"http://refer.amex.us/PASSAKOo2c?xl=cp33",
+            "href":"http://refer.amex.us/PASSAKlUSx?XLINK=MYCP",
             "img":"https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/category/cardarts/rose-gold-card.png",
+            "expire":false
+        },
+        {
+            "network":"Personal_Referrals",
+            "company":"American_Express",
+            "campaign":"Platinum",
+            "href":"http://refer.amex.us/PASSAKWh0u?XLINK=MYCP",
+            "img":"https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/category/cardarts/platinum-card.png",
             "expire":false
         }
     ],
@@ -155,14 +163,6 @@
     "midpage":[],
     "footer_ad":[
         {
-            "network":"CJ",
-            "company":"OnePlus",
-            "campaign":"OnePlus_8_Pro",
-            "href":"https://www.tkqlhce.com/click-100168746-14030694",
-            "img":"https://www.awltovhc.com/image-100168746-14030740",
-            "expire":false
-        },
-        {
             "network":"Amazon_Affiliates",
             "company":"Amazon",
             "campaign":"Homepage_-_Footer",
@@ -170,6 +170,5 @@
             "img":"https://images-na.ssl-images-amazon.com//images/G/01/rcm/728x90.gif",
             "expire":true
         }
-        
     ]
 }
