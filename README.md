@@ -19,7 +19,7 @@ Issues and PRs welcome.
 <div id="sidebar-ad"></div>
 <script src="https://adjs.tig.pw/ad.js" onload="populateKeys(['topbar_ad','sidebar_top_ad','sidebar_bottom_ad','midpage_ad','footer_ad']);" defer></script>
 ```
-2. **Under Development:** Put in your json file as the source parameter formatted like this [this](/ad.json)
+2. Put in your json file as the source parameter formatted like this [this](/ad.json)
 ```
 {
     "header":[
